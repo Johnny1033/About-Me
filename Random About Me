@@ -1,0 +1,12 @@
+import random
+
+def cool_things_about_me(do_you_want_an_answer):
+    awesome = ["I know the difference between AI and ML", "I can discount cash flows and passed the Series 7 and 66", 
+    "I am a veteran with interesting stories", "I taught myself Python", 
+    "I like to work with teams to grow individual and collective skills"]
+    if random.randint(1,6) < 6 and do_you_want_an_answer == "Yes":
+        print(awesome[random.randint(1,5)-1])
+    else:
+        print("I'm not that cool.")
+
+cool_things_about_me("Yes")
